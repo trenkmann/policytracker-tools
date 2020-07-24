@@ -38,7 +38,7 @@ export default {
         (country) => this.lowercaseInput.includes(country.toLowerCase()),
       );
 
-      const results = resultsNames.map((c) => countries.getAlpha2Code(c, 'en'));
+      const results = resultsNames.map((c) => countries.getAlpha3Code(c, 'en'));
 
       return [...results].join('; ');
     },
