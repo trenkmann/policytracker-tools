@@ -10,7 +10,7 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for uploading the Files to a SErver
+### Compiles and minifies for uploading the files to a web-server
 ```
 npm run build
 ```
