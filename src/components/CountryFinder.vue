@@ -13,6 +13,12 @@
       :rows="2"
     />
     <h3>Country Code to Name</h3>
+    <el-checkbox
+      v-model="caseSensitiveFromCode"
+      style="margin-bottom:10px"
+    >
+      Case Sensitive
+    </el-checkbox>
     <el-input
       v-model="inputFromCode"
       type="textarea"
@@ -38,7 +44,8 @@ export default {
   data() {
     return {
       inputFromName: 'greece Greece Austira austria',
-      inputFromCode: 'Aut aut AUT GRC grc ; GrC',
+      inputFromCode: 'Aut GRC',
+      caseSensitiveFromCode: false,
     };
   },
   computed: {
@@ -58,7 +65,9 @@ export default {
     foundFromCode() {
       const cCodes = Object.keys(countries.getAlpha3Codes('en')).flat();
 
-      const input = this.inputFromCode?.toUpperCase();
+      const input = this.caseSensitiveFromCode
+        ? this.inputFromCode
+        : this.inputFromCode?.toUpperCase();
 
       const resultsCodes = cCodes.filter(
         (country) => input.includes(country.toUpperCase()),
