@@ -32,7 +32,7 @@ Enter text containing country names to the first field, the second field will au
 
 Enter text containing country codes to the second field, the second field will automatically search for any country codes and display them in the second field. Country names in the second field will not contain duplicates.
 
-Tipp: If the list of Countries contains a lot of false positives, try checking "Case Sensitive".
+Tipp: If the list of countries contains a lot of false positives, try checking "Case Sensitive".
 
 
 
