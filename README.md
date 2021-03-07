@@ -1,5 +1,7 @@
 # tools
 
+The CountryFinder filters text for country names and country codes and translates the opposite.
+
 ## Project setup
 ```
 npm install
@@ -23,16 +25,15 @@ npm run lint
 ## Using the CountryFinder
 
 The CountryFinder Tool uses the the ISO 3166-1 Alpha 3 country codes ([npm package]([hallo](https://www.npmjs.com/package/i18n-iso-countries))).
-
 ### Country Name to Code
 
-Enter text containing country names to the first field, the second field will automatically search for any country names and display them in the second field. Country code in the second field will not contain duplicates.
+Enter any text that contains country names to the first text box. The application automatically searches for any country names included and displays them in the second text box. Country codes in the second field do not contain duplicates.
 
 ### County Code to Name
 
-Enter text containing country codes to the second field, the second field will automatically search for any country codes and display them in the second field. Country names in the second field will not contain duplicates.
+Enter any text that contains country codes to the second text box. The application automatically search for any country codes and displays them in the second field. Country names in the second field do not contain duplicates.
 
-Tipp: If the list of countries contains a lot of false positives, try checking "Case Sensitive".
+Tip: If the list of countries contains a lot of false positives, check for case sensitive spelling.
 
 
 
